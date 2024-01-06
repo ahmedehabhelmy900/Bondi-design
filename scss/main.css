@@ -1,0 +1,161 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title::after {
+  content: "";
+  background-color: #33d1cc;
+  width: 120px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.navbar {
+  background-color: #19283f;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded=true] {
+  border-color: #33d1cc !important;
+}
+.navbar .nav-item a:hover, .navbar .nav-item a.active, .navbar .nav-item a:focus {
+  color: #33d1cc !important;
+}
+.navbar .search {
+  color: #33d1cc;
+  border-left: 1px solid #33d1cc;
+}
+
+.landing {
+  background-color: #19283f;
+  height: calc(100vh - 85px);
+}
+
+.features .content {
+  counter-increment: feat;
+}
+.features .content .one::before {
+  content: "1";
+}
+.features .content .two::before {
+  content: "2";
+}
+.features .content .three::before {
+  content: "3";
+}
+.features .content > div {
+  padding-top: 5rem;
+}
+.features .content > div::before {
+  position: absolute;
+  font-size: 12rem;
+  opacity: 0.1;
+  top: -83px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.features .content > div .icon {
+  color: #33d1cc;
+}
+
+.work {
+  background-color: #eff7fa;
+}
+.work .content .titles p {
+  cursor: pointer;
+}
+.work .content .titles p:hover {
+  color: #33d1cc;
+}
+.work .content .row div {
+  position: relative;
+}
+.work .content .row div::before {
+  content: "Application";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 0;
+  height: 100%;
+  background-color: rgba(51, 209, 204, 0.5);
+  z-index: -5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  opacity: 1;
+  color: white;
+  font-size: 25px;
+}
+.work .content .row div:hover::before {
+  z-index: 5;
+  width: calc(100% - 24px);
+}
+
+.about .description {
+  max-width: 500px;
+}
+
+.team {
+  background-color: #eff7fa;
+}
+.team .titleTeam h2 {
+  color: #ffc400;
+}
+.team .titleTeam p {
+  max-width: 500px;
+}
+.team .col-lg-3 h3 {
+  background-color: #33d1cc;
+}
+
+.project {
+  background-color: #19283f;
+}
+
+.subscribe {
+  background-color: #ffc400;
+}
+.subscribe input[type=email] {
+  outline: none;
+}
+.subscribe input[type=email]::-moz-placeholder {
+  color: white;
+}
+.subscribe input[type=email]::placeholder {
+  color: white;
+}
+
+footer {
+  background-color: #19283f;
+}
+footer .info .copyright .ahmed {
+  color: #33d1cc;
+}
+footer .info .copyright .love {
+  color: #ffc400;
+}
+footer .contact-us .fa-facebook {
+  color: #1877f2;
+}
+footer .contact-us .fa-twitter {
+  color: #1da1f2;
+}
+footer .contact-us .fa-linkedin {
+  color: #0a66c2;
+}
+footer .contact-us .fa-youtube {
+  color: #ff0000;
+}/*# sourceMappingURL=main.css.map */
